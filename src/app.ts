@@ -26,6 +26,7 @@ app.use(
     // secure: true,
     httpOnly: false,
     sameSite: "none",
+    domain: "https://main--app-todo-next.netlify.app",
   })
 );
 
