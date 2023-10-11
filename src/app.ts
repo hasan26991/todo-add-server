@@ -22,8 +22,8 @@ app.use(
 app.use(
   cookieSession({
     signed: false,
-    secure: false,
-    // secure: true,
+    // secure: false,
+    secure: true,
     httpOnly: false,
     sameSite: "none",
     // domain: "main--app-todo-next.netlify.app",
