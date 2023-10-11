@@ -25,6 +25,7 @@ app.use(
     // secure: false,
     secure: true,
     httpOnly: false,
+    sameSite: "none",
   })
 );
 
