@@ -23,8 +23,8 @@ app.use(
   cookieSession({
     signed: false,
     // secure: false,
-    secure: true,
-    // httpOnly: false,
+    // secure: true,
+    httpOnly: false,
     sameSite: "none",
   })
 );
