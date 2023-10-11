@@ -22,7 +22,7 @@ app.use(
 app.use(
   cookieSession({
     signed: false,
-    // secure: false,
+    secure: false,
     // secure: true,
     httpOnly: false,
     sameSite: "none",
