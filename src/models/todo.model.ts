@@ -15,6 +15,7 @@ interface TodoDoc extends mongoose.Document {
   message: string;
   completed: boolean;
   userId: string;
+  createdAt: Date;
 }
 
 const todoSchema = new mongoose.Schema(

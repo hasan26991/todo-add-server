@@ -46,6 +46,7 @@ export const updateTodo = async (req: Request, res: Response) => {
 
 export const getTodos = async (req: Request, res: Response) => {
   const todos = await Todo.find({});
+  todos.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime());
 
   res.status(200).send({
     code: 200,
