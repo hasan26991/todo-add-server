@@ -3,11 +3,6 @@ import mongoose from "mongoose";
 interface TodoAttrs {
   message: string;
   userId: string;
-  //   "userId": "643bca55dd25ab961ffe3031",
-  //     "message": "Complete presentation for team meeting on Friday",
-  //     "completed": false,
-  //     "date": "1681640246492",
-  //     "id": "643bcb674dbd383d844e589d"
 }
 
 // An interface that describes the properties that a User Modal has

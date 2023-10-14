@@ -12,7 +12,5 @@ it("clears the cookie after signing out", async () => {
 
   const response = await request(app).post("/api/users/signout").expect(200);
 
-  //   console.log(response.get("Set-Cookie"));
-  // we could assert if the cookie is of certain format
   expect(response.get("Set-Cookie")).toBeDefined();
 });

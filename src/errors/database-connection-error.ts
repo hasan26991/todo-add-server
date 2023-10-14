@@ -6,7 +6,6 @@ export class DatabaseConnectionError extends CustomError {
   constructor() {
     super("error connecting to db");
 
-    // Only because we are extending a built in class
     Object.setPrototypeOf(this, DatabaseConnectionError.prototype);
   }
   serializeErrors() {

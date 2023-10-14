@@ -20,7 +20,6 @@ export const requireAuth = (
   res: Response,
   next: NextFunction
 ) => {
-  console.log(req.session?.jwt);
   try {
     const payload = jwt.verify(
       req.session?.jwt,
